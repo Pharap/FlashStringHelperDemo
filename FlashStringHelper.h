@@ -51,17 +51,17 @@ inline FlashStringHelper asFlashStringHelper(const signed char * flashString) no
 // readFlashString
 //
 
-FlashStringHelper readFlashStringPointer(const char * const * flashString) noexcept
+inline FlashStringHelper readFlashStringPointer(const char * const * flashString) noexcept
 {
 	return static_cast<FlashStringHelper>(pgm_read_ptr(flashString));
 }
 
-FlashStringHelper readFlashStringPointer(const unsigned char * const * flashString) noexcept
+inline FlashStringHelper readFlashStringPointer(const unsigned char * const * flashString) noexcept
 {
 	return static_cast<FlashStringHelper>(pgm_read_ptr(flashString));
 }
 
-FlashStringHelper readFlashStringPointer(const signed char * const * flashString) noexcept
+inline FlashStringHelper readFlashStringPointer(const signed char * const * flashString) noexcept
 {
 	return static_cast<FlashStringHelper>(pgm_read_ptr(flashString));
 }
